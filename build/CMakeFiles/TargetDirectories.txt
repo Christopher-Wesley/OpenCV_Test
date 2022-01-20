@@ -1,0 +1,3 @@
+/Users/chriswesley/desktop/Sample_Code/build/CMakeFiles/testCode.dir
+/Users/chriswesley/desktop/Sample_Code/build/CMakeFiles/edit_cache.dir
+/Users/chriswesley/desktop/Sample_Code/build/CMakeFiles/rebuild_cache.dir
