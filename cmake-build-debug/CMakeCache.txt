@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Enable tests
+BACKWARD_TESTS:BOOL=ON
+
+//The directory containing a CMake configuration file for BZip2.
+BZip2_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/BZip2
+
+//The directory containing a CMake configuration file for Backward.
+Backward_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/backward
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -204,8 +213,92 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for DepthAI.
+DepthAI_DIR:PATH=DepthAI_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for FP16.
+FP16_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/FP16
+
+//Path to a file.
+LIBBFD_INCLUDE_DIR:PATH=LIBBFD_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBBFD_LIBRARY:FILEPATH=LIBBFD_LIBRARY-NOTFOUND
+
+//Path to a file.
+LIBDL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include
+
+//Path to a library.
+LIBDL_LIBRARY:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/lib/libdl.tbd
+
+//Path to a file.
+LIBDWARF_INCLUDE_DIR:PATH=LIBDWARF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBDWARF_LIBRARY:FILEPATH=LIBDWARF_LIBRARY-NOTFOUND
+
+//Path to a file.
+LIBDW_INCLUDE_DIR:PATH=LIBDW_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBDW_LIBRARY:FILEPATH=LIBDW_LIBRARY-NOTFOUND
+
+//Path to a file.
+LIBELF_INCLUDE_DIR:PATH=LIBELF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+LIBELF_LIBRARY:FILEPATH=LIBELF_LIBRARY-NOTFOUND
+
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/opt/homebrew/lib/cmake/opencv4
+
+//Auto detect backward's stack details dependencies
+STACK_DETAILS_AUTO_DETECT:BOOL=TRUE
+
+//Use backtrace from (e)glibc for symbols resolution
+STACK_DETAILS_BACKTRACE_SYMBOL:BOOL=FALSE
+
+//Use libbfd to read debug info
+STACK_DETAILS_BFD:BOOL=FALSE
+
+//Use libdw to read debug info
+STACK_DETAILS_DW:BOOL=FALSE
+
+//Use libdwarf/libelf to read debug info
+STACK_DETAILS_DWARF:BOOL=FALSE
+
+//Use backtrace from (e)glibc for stack walking
+STACK_WALKING_BACKTRACE:BOOL=FALSE
+
+//Use libunwind for stack walking
+STACK_WALKING_LIBUNWIND:BOOL=FALSE
+
+//Use compiler's unwind API
+STACK_WALKING_UNWIND:BOOL=TRUE
+
+//The directory containing a CMake configuration file for XLink.
+XLink_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/XLink
+
+//The directory containing a CMake configuration file for ZLIB.
+ZLIB_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/ZLIB
+
+//The directory containing a CMake configuration file for archive_static.
+archive_static_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/archive_static
+
+//The directory containing a CMake configuration file for depthai.
+depthai_DIR:PATH=depthai_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libnop.
+libnop_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/libnop
+
+//The directory containing a CMake configuration file for lzma.
+lzma_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/lzma
+
+//The directory containing a CMake configuration file for nlohmann_json.
+nlohmann_json_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/nlohmann_json
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/cmake/spdlog
 
 //Value Computed by CMake
 testCode_BINARY_DIR:STATIC=/Users/chriswesley/Desktop/Sample_Code/cmake-build-debug
@@ -221,6 +314,18 @@ testCode_SOURCE_DIR:STATIC=/Users/chriswesley/Desktop/Sample_Code
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: BACKWARD_DEFINITIONS
+BACKWARD_DEFINITIONS-ADVANCED:INTERNAL=1
+//BACKWARD_DEFINITIONS
+BACKWARD_DEFINITIONS:INTERNAL=BACKWARD_HAS_UNWIND=1;BACKWARD_HAS_LIBUNWIND=0;BACKWARD_HAS_BACKTRACE=0;BACKWARD_HAS_BACKTRACE_SYMBOL=1;BACKWARD_HAS_DW=0;BACKWARD_HAS_BFD=0;BACKWARD_HAS_DWARF=0
+//ADVANCED property for variable: BACKWARD_INCLUDE_DIRS
+BACKWARD_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//_BACKWARD_INCLUDE_DIRS
+BACKWARD_INCLUDE_DIRS:INTERNAL=/Users/chriswesley/.hunter/_Base/9b4e732/60e018a/544df60/Install/lib/backward
+//ADVANCED property for variable: BACKWARD_LIBRARIES
+BACKWARD_LIBRARIES-ADVANCED:INTERNAL=1
+//BACKWARD_LIBRARIES
+BACKWARD_LIBRARIES:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -289,6 +394,10 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/chriswesley/Desktop/Sample_Code
@@ -354,4 +463,26 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/homebrew/Cellar/opencv/4.5.3][v4.5.3()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: LIBBFD_INCLUDE_DIR
+LIBBFD_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBBFD_LIBRARY
+LIBBFD_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDL_INCLUDE_DIR
+LIBDL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDL_LIBRARY
+LIBDL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDWARF_INCLUDE_DIR
+LIBDWARF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDWARF_LIBRARY
+LIBDWARF_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDW_INCLUDE_DIR
+LIBDW_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBDW_LIBRARY
+LIBDW_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBELF_INCLUDE_DIR
+LIBELF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LIBELF_LIBRARY
+LIBELF_LIBRARY-ADVANCED:INTERNAL=1
 

@@ -5,7 +5,8 @@ cmake_minimum_required(VERSION 2.8.12)
 # SPECIFY YOUR PROJECT NAME
 PROJECT(testCode)
 
-SET(/Users/chriswesley/opencv/build/CMakeFiles/Export/lib/cmake/opencv4)
+SET(OpenCV_DIR /Users/chriswesley/opencv/build/CMakeFiles/Export/lib/cmake/opencv4)
+SET(depthai_DIR /Users/chriswesley/depthai-core/build)
 
 # Enable C++11
 set(CMAKE_CXX_STANDARD 11)
@@ -30,20 +31,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 
 # MAKE SURE OPENCV IS INSTALLED CORRECTLY
-find_package( OpenCV REQUIRED )
-
-
+find_package(OpenCV REQUIRED)
+find_package(depthai CONFIG REQUIRED )
 # INCLUDE OPENCV DIRECTORIES
 include_directories( ${OpenCV_INCLUDE_DIRS})
-
 
 # MACRO TO COMPILE CPP FILES
 # Do Not Edit
 MACRO(add_example name)
     ADD_EXECUTABLE(${name} ${name}.cpp)
-    TARGET_LINK_LIBRARIES(${name} ${OpenCV_LIBS} )
+    TARGET_LINK_LIBRARIES(${name} PRIVATE depthai::opencv ${OpenCV_LIBS})
 ENDMACRO()
-
 
 # COMPILE CPP FILES USING THIS LINE
 ######## EDIT THE FILE NAMES ########
