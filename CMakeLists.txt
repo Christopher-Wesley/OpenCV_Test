@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 
 
 # SPECIFY YOUR PROJECT NAME
-PROJECT(testCode)
+PROJECT(masking)
 
 SET(OpenCV_DIR /Users/chriswesley/opencv/build/CMakeFiles/Export/lib/cmake/opencv4)
 SET(depthai_DIR /Users/chriswesley/depthai-core/build)
@@ -45,5 +45,5 @@ ENDMACRO()
 
 # COMPILE CPP FILES USING THIS LINE
 ######## EDIT THE FILE NAMES ########
-add_example(testCode)
+add_example(masking)
 #add_example(sampleCode2) and so on
